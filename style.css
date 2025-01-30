@@ -18,11 +18,26 @@
 }
 
 body {
-    height: 0%;
     background-color: var(--color-primary);
-    display: block;
-    justify-content: center;
-    align-items: center;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* Para pantallas menores a 768px (tablets y móviles) */
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+
+/* Para pantallas menores a 480px (móviles pequeños) */
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
 }
 
 .main-content {
@@ -30,6 +45,7 @@ body {
     flex-direction: column;
     height: 100%;
     width: 100%;
+    flex-grow:100%;
 }
 
 
@@ -53,20 +69,20 @@ body {
 /* Sección de entrada */
 
 .input-section {
-    flex: 100%;
+    flex: 0.3;
     background-color: var(--color-secondary);
     border: 1px solid #000;
-    border-radius: 64px 64px 64px 64px;
+    border-radius: 64px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 30px;
-    width: 80%;
+    width: 60%;
     align-self: center;
     margin-bottom: 5%;
     gap: 20px;
 }
-}
+
 
 
 /* Títulos */
@@ -206,19 +222,15 @@ ul {
 }
 
 footer {
-    display: block;
-    text-align: center;
-    flex-direction: column;
-    display: grid;
-    grid-template-columns: 1fr;
     width: 100%;
     padding: 1%;
     background-color: #a1a1a1;
-    margin-top: auto;
+    margin-top: 1%;
 }
 
 footer,
 p {
     display: block;
     font-family: "Inter", serif;
+    text-align: center;
 }
