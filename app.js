@@ -18,7 +18,7 @@ function mostrarParticipantes() {
     const resultado = document.getElementById('resultado');
     resultado.innerHTML = ''; // Limpiar contenido anterior
 
-    const lista = document.createElement('ul'); // Crear un elemento de lista no ordenada
+    const lista = document.createElement('ol'); // Crear un elemento de lista no ordenada
     for (let i = 0; i < listaDeParticipantes.length; i++) {
         const item = document.createElement('li'); // Crear un elemento de lista
         item.textContent = listaDeParticipantes[i]; // Asignar el nombre al <li>
@@ -30,14 +30,14 @@ function mostrarParticipantes() {
 
 function sortearAmigo() {
     if (listaDeParticipantes.length === 0) {
-        document.getElementById('resultado').innerHTML = 'No hay participantes en el sorteo';
+        document.getElementById('resultado').innerHTML = 'No hay participantes en el sorteo, debe ingresar un nombre.';
         return;
     }
 
     const indiceDeGanador = Math.floor(Math.random() * listaDeParticipantes.length);
     const ganador = listaDeParticipantes[indiceDeGanador];
     document.getElementById('resultado').innerHTML = `
-        <strong>Ganador: ${ganador}</strong><br>`;
+        <strong>El ganador del sorteo es: ${ganador}</strong><br>`;
 }
 
 function vaciar() {
