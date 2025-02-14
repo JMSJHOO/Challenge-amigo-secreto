@@ -42,11 +42,11 @@ function sortearAmigo() {
         for (let i = 0; i < listaDeParticipantes.length; i++) {
             const item = document.createElement('li'); // Crear un elemento de lista
             item.textContent = listaDeParticipantes[i]; // Asignar el nombre al <li>
-            document.getElementById(listaAmigos);
+            document.getElementById('listaAmigos');
             lista2.appendChild(item); // Agregar el <li> a la lista
         }
         
-        resultado.appendChild(lista2); // Agregar la lista completa al div resultado
+        // resultado.appendChild(lista2); // Agregar la lista completa al div resultado
 
     }
 function vaciar() {
