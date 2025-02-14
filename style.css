@@ -218,6 +218,36 @@ p {
     font-family: "Inter", serif;
     text-align: center;
 }
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .header-banner{
+        margin-bottom: 25%;
+    }
+    .footer{
+        margin-top: 25%;
+    }
+
+    .input-section {
+        padding: 30px;
+        width: 80%;
+        align-self: center;
+        margin-bottom: 5%;
+        gap: 20px;
+
+    }
+    .button-add, .button-empty{
+        display: inline;
+        /* margin: 2%; */
+        align-items: center;
+        text-align: center;
+        align-content: center;
+        margin-left: 6%;
+    }
+
+    
+}
 
 @media screen and (max-width: 480px) {
     body {
@@ -238,6 +268,12 @@ p {
         text-align: center;
         align-content: center;
         margin-left: 6%;
+    }
+    .header-banner{
+        margin-bottom: 25%;
+    }
+    .footer{
+        margin-top: 25%;
     }
    
 }
