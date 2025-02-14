@@ -22,10 +22,13 @@
             <h2 class="section-title">Digite el nombre de sus amigos</h2>
             <div class="input-wrapper">
                 <input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre">
-                <button class="button-add" onclick="agregarAmigo()">Añadir</button>
-                <button class="button-empty" onclick="vaciar()">Vaciar</button>
+                <div class="botones">
+                    <button class="button-add" onclick="agregarAmigo()">Añadir</button>
+                    <button class="button-empty" onclick="vaciar()">Vaciar</button>
+                </div>
             </div>
-
+           
+            
             <p id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></p>
             <p id="resultado" class="result-list" aria-live="polite"></p>
 
@@ -39,7 +42,7 @@
     </main>
     <footer class="footer">
         <p>Jhon-Guems Lemaine estudiante de Alura Latam</p>
-        <p>Enero 2025</p>
+        <p>Enero 2025 &copy</p>
     </footer>
 
     <script src="app.js" defer></script>

@@ -36,10 +36,19 @@ function sortearAmigo() {
 
     const indiceDeGanador = Math.floor(Math.random() * listaDeParticipantes.length);
     const ganador = listaDeParticipantes[indiceDeGanador];
-    document.getElementById('resultado').innerHTML = `
-        <strong>El ganador del sorteo es: ${ganador}</strong><br>`;
-}
+    document.getElementById('listaAmigos').innerHTML = `<strong>El ganador del sorteo es: ${ganador}</strong><br>`;
 
+        const lista2 = document.createElement('ol'); // Crear un elemento de lista no ordenada
+        for (let i = 0; i < listaDeParticipantes.length; i++) {
+            const item = document.createElement('li'); // Crear un elemento de lista
+            item.textContent = listaDeParticipantes[i]; // Asignar el nombre al <li>
+            document.getElementById(listaAmigos);
+            lista2.appendChild(item); // Agregar el <li> a la lista
+        }
+        
+        resultado.appendChild(lista2); // Agregar la lista completa al div resultado
+
+    }
 function vaciar() {
     listaDeParticipantes.length = 0; // Vaciar el arreglo
     document.getElementById('resultado').innerHTML = ''; // Limpiar el contenido visual

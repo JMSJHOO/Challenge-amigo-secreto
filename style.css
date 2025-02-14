@@ -177,12 +177,14 @@ ul {
 
 .result-list {
     margin-top: 5px;
-    color: #05DF05;
+    color: #090909;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
 }
-
+.name-list{
+    color: blue;
+}
 
 /* Botón de sortear título */
 
@@ -228,7 +230,13 @@ p {
     .footer{
         margin-top: 10%;
     }
-
+    .main-title{
+        margin: 5px;
+    }
+    .img{
+        width: 50%;
+    }
+ 
     .input-section {
         padding: 30px;
         width: 80%;
@@ -239,11 +247,22 @@ p {
     }
     .button-add, .button-empty{
         display: inline;
-        /* margin: 2%; */
         align-items: center;
         text-align: center;
         align-content: center;
         margin-left: 6%;
+    }
+    .botones{
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    }
+    .result-list, .name-list{
+        margin: 5px;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+
     }
 
     
@@ -260,6 +279,10 @@ p {
         margin-bottom: 1%;
         gap: 20px;
     }
+    .img{
+        width: 50%;
+    }
+ 
     
     .button-add, .button-empty{
         display: inline;
@@ -275,5 +298,11 @@ p {
     .footer{
         margin-top: 10%;
     }
+    .botones{
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    }
+
    
 }
