@@ -223,10 +223,10 @@ p {
         font-size: 16px;
     }
     .header-banner{
-        margin-bottom: 25%;
+        margin-bottom: 10%;
     }
     .footer{
-        margin-top: 25%;
+        margin-top: 10%;
     }
 
     .input-section {
@@ -270,10 +270,10 @@ p {
         margin-left: 6%;
     }
     .header-banner{
-        margin-bottom: 25%;
+        margin-bottom: 10%;
     }
     .footer{
-        margin-top: 25%;
+        margin-top: 10%;
     }
    
 }
