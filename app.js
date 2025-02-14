@@ -52,5 +52,6 @@ function sortearAmigo() {
 function vaciar() {
     listaDeParticipantes.length = 0; // Vaciar el arreglo
     document.getElementById('resultado').innerHTML = ''; // Limpiar el contenido visual
+    document.getElementById('listaAmigos').innerHTML = '';
     alert('La lista de participantes ha sido borrada.');
 }
