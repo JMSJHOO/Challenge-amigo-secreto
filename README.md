@@ -4,13 +4,13 @@
 <li>EL codigo javaScript lo hice desde 0 con la ayuda de los cursos de alura latam además mis ideas de otros curso que tomé. Agregué algunos detalles que no pidieron en ese challenge, tal como el boton para vacíar, el sweet alert y swal.fire, entre otros</li>
 </ol>
 
-<h2>De que se trata El anigo secreto?</h2>
+<h2>De que se trata El amigo secreto?</h2>
 
 <p>El amigo secreto es una app que permite ingresar nombres de participantes y sortearlos para tener un ganador.
 Los nombre deben ingresar uno por uno de forma separado y puede ser solo nombre o nombre con apellidos</p>
 
 <p>
-Una vez que ingresan los nombres pueden sortear la lista o pueden borrar la lista compra. El programa solo muestra la lista de participante y el nombre de ganador arriba de la lists de los participantes.
+Una vez que ingresan los nombres pueden sortear la lista o pueden borrar la lista completa El programa solo muestra la lista de participante y el nombre de ganador arriba de la lista de los participantes.
 </p>
 
 <p>Logré hacer esa app gracias a la ayuda de los buenos profesores de <strong>Alura latam</strong> </p>
