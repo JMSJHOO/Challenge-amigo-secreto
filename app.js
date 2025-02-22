@@ -5,7 +5,7 @@ function agregarAmigo() {
     const nombre = entrada.value.trim();
 
     if (!nombre) {
-        alert('Por favor, inserte un nombre.');
+        swal('PORFAVOR, INGRESE UN NOMBRE!');
         return;
     }
 
@@ -36,7 +36,7 @@ function sortearAmigo() {
 
     const indiceDeGanador = Math.floor(Math.random() * listaDeParticipantes.length);
     const ganador = listaDeParticipantes[indiceDeGanador];
-    document.getElementById('listaAmigos').innerHTML = `<strong>El ganador del sorteo es: ${ganador}</strong><br>`;
+    document.getElementById('listaAmigos').innerHTML = `<strong>EL GANADOR DEL SORTEO ES: ${ganador}</strong><br>`;
 
         const lista2 = document.createElement('ol'); // Crear un elemento de lista no ordenada
         for (let i = 0; i < listaDeParticipantes.length; i++) {
