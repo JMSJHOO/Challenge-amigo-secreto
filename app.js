@@ -49,9 +49,35 @@ function sortearAmigo() {
         // resultado.appendChild(lista2); // Agregar la lista completa al div resultado
 
     }
+//CAMBIE EL ALERT POR EL SWAL Y SWAL.FIRE
 function vaciar() {
-    listaDeParticipantes.length = 0; // Vaciar el arreglo
-    document.getElementById('resultado').innerHTML = ''; // Limpiar el contenido visual
-    document.getElementById('listaAmigos').innerHTML = '';
-    alert('La lista de participantes ha sido borrada.');
-}
+    Swal.fire({
+      title: '¿ESTÁS SEGURO?',
+      text: 'ESTÁ ACCIÓN ES IRREVERSIBLE!',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonText: 'Sí, vaciar',
+      cancelButtonText: 'No, cancelar'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        document.getElementById('resultado').innerHTML = ''; // Limpiar el contenido visual
+        document.getElementById('listaAmigos').innerHTML = '';
+        listaDeParticipantes.length = 0; // Vaciar el arreglo  
+        Swal.fire(
+          '¡Vaciado!',
+          'La lista de participantes ha sido borrada.',
+          'success'
+        )
+      }
+    })
+    
+  }
+
+
+
+// function vaciar() {
+//     listaDeParticipantes.length = 0; // Vaciar el arreglo
+//     document.getElementById('resultado').innerHTML = ''; // Limpiar el contenido visual
+//     document.getElementById('listaAmigos').innerHTML = '';
+//     alert('La lista de participantes ha sido borrada.');
+// }

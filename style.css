@@ -1,11 +1,12 @@
 :root {
-    --color-primary: #121318;
+    --color-primary: #0a0a0a;
     --color-secondary: #FFF9EB;
     --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
-    --color-button-hover: #e55720;
-    --color-text: #444444;
+    --color-button: #000000;
+    --color-button-hover: #94563e;
+    --color-text: #110e0e;
     --color-white: #FFFFFF;
+    --color-azul:#3444d1;
 }
 
 
@@ -22,6 +23,14 @@ body {
     min-height:100vh;
     display: flex;
     flex-direction: column;
+    background-image: url('asset/img3.jpeg'); /* Reemplaza con la URL o ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+    /* backdrop-filter: blur(5px); */
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, 
+    Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
 .main-content {
@@ -30,6 +39,7 @@ body {
     height: 100%;
     width: 100%;
     flex-grow:100%;
+
 }
 
 
@@ -41,7 +51,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 5px 0 0;
-    background-color: #a1a1a1;
+    background-color: var(--color-azul);
     margin-bottom: 5%;
 }
 
@@ -54,8 +64,8 @@ body {
 
 .input-section {
     flex: 0.3;
-    background-color: var(--color-secondary);
-    border: 1px solid #000;
+    background-color: var(--color-tertiary);
+    border: 1px solid var(--color-azul);
     border-radius: 64px;
     display: flex;
     flex-direction: column;
@@ -81,10 +91,11 @@ body {
 }
 
 .section-title {
-    font-family: "Inter", serif;
+    font-family: "Merriweather", serif;
+    font-style: italic;
     font-size: 36px;
     font-weight: 700;
-    color: var(--color-primary);
+    color: var(--color-azul);
     margin: 10px 0;
     text-align: center;
 }
@@ -103,7 +114,7 @@ body {
 .input-name {
     width: 100%;
     padding: 10px;
-    border: 2px solid #000;
+    border: 2px solid var(--color-primary);
     border-radius: 25px 25px 25px 25px;
     font-size: 16px;
     display: block;
@@ -121,13 +132,12 @@ body {
     flex: 1;
     padding: 10px 15px;
     font-size: 16px;
-    border: 2px solid #333;
+    border: 2px solid var(--color-tertiary);
     border-right: none;
     border-radius: 25px 25px 25px 25px;
     font-family: "Merriweather", serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px var(--color-primary);
 }
-
 
 /* Estilos de botón */
 
@@ -135,33 +145,35 @@ button {
     padding: 15px 30px;
     font-family: "Inter", sans-serif;
     font-size: 16px;
-    border: 2px solid #000;
+    border: 2px solid var(--color-primary);
     border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px var(--color-primary);
     cursor: pointer;
     margin-top: 5%;
 }
 
 .button-add {
-    background-color: var(--color-tertiary);
-    color: var(--color-text);
+    background-color: var(--color-azul);
+    color: var(--color-white);
     border-radius: 25px 0px 0px 25px;
     margin-left: 30%;
 }
 
 .button-add:hover {
-    background-color: #a1a1a1;
+    background-color: var(--color-white);
+    color: var(--color-text);
 }
 
 .button-empty {
-    background-color: var(--color-tertiary);
-    color: var(--color-text);
+    background-color: var(--color-azul);
+    color: var(--color-white);
     border-radius: 0px 25px 25px 0cm;
     margin-left: 0%;
 }
 
 .button-empty:hover {
-    background-color: #a1a1a1;
+    background-color:var(--color-white);
+    color: var(--color-text);
 }
 
 
@@ -177,13 +189,13 @@ ul {
 
 .result-list {
     margin-top: 5px;
-    color: #090909;
+    color: var(--color-primary);
     font-size: 22px;
     font-weight: bold;
     text-align: center;
 }
 .name-list{
-    color: blue;
+    color: var(--color-azul);
 }
 
 /* Botón de sortear título */
@@ -210,8 +222,9 @@ ul {
 footer {
     width: 100%;
     padding: 1%;
-    background-color: #a1a1a1;
+    background-color: var(--color-azul);
     margin-top: 1%;
+    color: var(--color-white);
 }
 
 footer,
@@ -224,27 +237,32 @@ p {
     body {
         font-size: 16px;
     }
+    
     .header-banner{
         margin-bottom: 10%;
     }
+
     .footer{
         margin-top: 10%;
     }
+
     .main-title{
         margin: 5px;
     }
+
     .img{
         width: 50%;
     }
  
     .input-section {
         padding: 30px;
-        width: 80%;
+        width: 70%;
         align-self: center;
         margin-bottom: 5%;
         gap: 20px;
 
     }
+
     .button-add, .button-empty{
         display: inline;
         align-items: center;
@@ -252,11 +270,13 @@ p {
         align-content: center;
         margin-left: 6%;
     }
+
     .botones{
         text-align: center;
         align-items: center;
         align-content: center;
     }
+
     .result-list, .name-list{
         margin: 5px;
         text-align: center;
@@ -267,11 +287,11 @@ p {
 
     
 }
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 390px) {
     body {
         font-size: 14px;
     }
+
     .input-section {
         padding: 10%;
         width: 90%;
@@ -279,30 +299,30 @@ p {
         margin-bottom: 1%;
         gap: 20px;
     }
+
     .img{
         width: 50%;
     }
- 
-    
+   
     .button-add, .button-empty{
         display: inline;
-        /* margin: 2%; */
         align-items: center;
         text-align: center;
         align-content: center;
         margin-left: 6%;
     }
+
     .header-banner{
         margin-bottom: 10%;
     }
+
     .footer{
         margin-top: 10%;
     }
+
     .botones{
         text-align: center;
         align-items: center;
         align-content: center;
     }
-
-   
 }
