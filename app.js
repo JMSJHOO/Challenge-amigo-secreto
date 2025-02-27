@@ -11,6 +11,7 @@ function agregarAmigo() {
 
     listaDeParticipantes.push(nombre);
     entrada.value = '';
+    entrada.focus();
     mostrarParticipantes();
 }
 
@@ -45,8 +46,6 @@ function sortearAmigo() {
             document.getElementById('listaAmigos');
             lista2.appendChild(item); // Agregar el <li> a la lista
         }
-        
-        // resultado.appendChild(lista2); // Agregar la lista completa al div resultado
 
     }
 //CAMBIE EL ALERT POR EL SWAL Y SWAL.FIRE
@@ -69,15 +68,6 @@ function vaciar() {
           'success'
         )
       }
-    })
+    });
     
   }
-
-
-
-// function vaciar() {
-//     listaDeParticipantes.length = 0; // Vaciar el arreglo
-//     document.getElementById('resultado').innerHTML = ''; // Limpiar el contenido visual
-//     document.getElementById('listaAmigos').innerHTML = '';
-//     alert('La lista de participantes ha sido borrada.');
-// }
