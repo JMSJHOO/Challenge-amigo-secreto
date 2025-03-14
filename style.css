@@ -124,7 +124,10 @@ body {
     width: 300px;
     justify-content: center;
 }
-
+.input-name:hover{
+    cursor: pointer;
+   border-color: var(--color-azul);
+}
 
 /* Estilos de entrada de texto */
 
